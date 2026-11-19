@@ -1,0 +1,1 @@
+</main><footer><div class="footer-brand">Karya Kita</div><p>Ruang temu karya handmade dan pecinta produk lokal.</p><small>© <?=date('Y')?> Created By Luqman Hakim. Dukung karya para pelaku UMKM.</small></footer></body></html>

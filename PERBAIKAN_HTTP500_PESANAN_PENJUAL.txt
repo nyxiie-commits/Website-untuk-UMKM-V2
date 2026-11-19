@@ -1,0 +1,24 @@
+PERBAIKAN HTTP ERROR 500 - SELLER/PESANAN.PHP
+
+PENYEBAB
+Pada paket sebelumnya, file seller/pesanan.php berisi isi functions.php secara tidak sengaja.
+Akibatnya halaman pesanan penjual menjalankan deklarasi fungsi yang sudah dimuat dari
+functions.php dan menghasilkan fatal error (Cannot redeclare function).
+
+PERBAIKAN
+File seller/pesanan.php telah dikembalikan menjadi halaman Seller Center yang:
+- Memuat seller/auth.php untuk validasi sesi dan status penjual.
+- Menampilkan hanya pesanan yang seluruh item-nya dimiliki seller yang sedang login.
+- Memeriksa kepemilikan pesanan sebelum menerima aksi POST.
+- Mendukung verifikasi, penolakan, tandai dikirim, dan selesaikan pesanan.
+
+CARA PASANG PATCH
+1. Ekstrak ZIP patch.
+2. Buka File Manager hosting.
+3. Masuk ke folder public_html/seller/.
+4. Backup atau rename file pesanan.php lama.
+5. Upload file seller/pesanan.php dari ZIP ini ke folder tersebut.
+6. Pastikan nama dan lokasi akhirnya: public_html/seller/pesanan.php
+7. Buka kembali https://karyakita.gt.tc/seller/pesanan.php
+
+Tidak ada perubahan database atau migrasi SQL yang diperlukan untuk perbaikan ini.

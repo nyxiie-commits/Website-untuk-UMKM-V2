@@ -1,0 +1,1 @@
+<?php require 'functions.php';unset($_SESSION['user']);session_regenerate_id(true);go('index.php');?>

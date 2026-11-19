@@ -1,0 +1,21 @@
+PATCH EKSPOR XLSX KARYAKITA
+
+Tujuan:
+Mengganti ekspor CSV menjadi file Excel .xlsx asli.
+
+Cara memasang:
+1. Backup file admin/export-penjualan.php yang ada di hosting.
+2. Ekstrak ZIP ini.
+3. Upload folder/file admin/export-penjualan.php ke folder htdocs/admin/ di InfinityFree dan timpa file lama.
+4. Tidak perlu mengubah database atau file admin/index.php.
+5. Login sebagai admin, buka Dashboard > Ringkasan Penjualan, lalu klik Unduh Excel.
+6. Pastikan file yang terunduh berakhiran .xlsx.
+
+Isi laporan:
+No. pesanan, tanggal, pelanggan, kontak, alamat, rincian produk, jumlah produk,
+subtotal produk, ekspedisi, ongkir, total pembayaran, metode pembayaran,
+status pembayaran, dan status pesanan.
+
+Catatan teknis:
+File XLSX dibuat langsung oleh PHP tanpa library eksternal dan tanpa membutuhkan
+PHP ZipArchive. Tetap memerlukan PDO MySQL yang sudah dipakai aplikasi.

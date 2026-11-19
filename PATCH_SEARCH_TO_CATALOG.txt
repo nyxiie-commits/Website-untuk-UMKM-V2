@@ -1,0 +1,19 @@
+PEMBARUAN KARYAKITA: SEARCH LANGSUNG KE KATALOG
+
+File yang diperbarui:
+- header.php
+- assets/css/style.css (jika tersedia)
+- karyakita/header.php (salinan struktur nested)
+- karyakita/assets/css/style.css (jika tersedia)
+
+Perubahan:
+Form pencarian sekarang mengarah ke index.php#produk. Setelah pengguna mengetik kata kunci lalu menekan Enter atau tombol cari, halaman hasil pencarian akan otomatis membuka bagian katalog produk (id=produk).
+
+Pemasangan:
+1. Backup file header.php dan assets/css/style.css di hosting.
+2. Upload header.php ke htdocs/header.php.
+3. Upload assets/css/style.css ke htdocs/assets/css/style.css.
+4. Jika website yang digunakan berada di subfolder /karyakita/, gunakan pasangan file di folder karyakita dalam ZIP.
+5. Refresh website dengan Ctrl+F5.
+
+Tidak ada perubahan database dan tidak perlu impor SQL.
